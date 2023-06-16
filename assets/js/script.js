@@ -1,5 +1,3 @@
-// script.js
-
 var currentNumberIndex = 0;
 var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 var audioElement = null;
@@ -13,11 +11,11 @@ function generateNumber() {
   var numberBox = document.getElementById("number-box");
   numberBox.style.display = "none";
   var numberImage = document.getElementById("number-image");
-  numberImage.style.backgroundImage = "url('numbers/" + numbers[currentNumberIndex] + ".jpg')";
+  numberImage.style.backgroundImage = "url('./assets/numbers/" + numbers[currentNumberIndex] + ".jpg')";
   numberImage.style.display = "block";
 
   // Inicializar o elemento de áudio
-  var audioFile = "audio/" + numbers[currentNumberIndex] + ".mp3";
+  var audioFile = "./assets/audio/" + numbers[currentNumberIndex] + ".mp3";
   audioElement = new Audio(audioFile);
 }
 
