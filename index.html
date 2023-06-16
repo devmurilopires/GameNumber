@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Mini Game - Números</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,24 +28,24 @@
     <h1 id="title">Se divirta aprendendo os números!</h1>
     <div class="start">
       <p>Clique para iniciar!</p>
-      <button onclick="startGame()">Iniciar</button>
+      <button onclick="startGame()"><i class="bi bi-play-fill"></i> INICIAR </button>
     </div>
     <div id="game" style="display: none;">
       <h2>Adivinhe o Número</h2>
       <div class="number" id="number-box"></div>
       <div class="number-image" id="number-image"></div>
       <div class="input-container">
-        <button onclick="previousNumber()">&lt;</button>
+        <button onclick="previousNumber()" class="previous"><i class="bi bi-skip-start-fill"></i></button>
         <button onclick="playAudio()">Ouvir Número</button>
-        <button onclick="nextNumber()">&gt;</button>
+        <button onclick="nextNumber()" class="next"><i class="bi bi-skip-end-fill"></i></button>
       </div>
       <div class="stop-game">
-        <button onclick="endGame()">PARAR</button>
+        <button onclick="endGame()"><i class="bi bi-pause-fill"></i> PARAR</button>
       </div>
       <div class="instructions">
         <h3>Instruções:</h3>
         <ul>
-          <li>Clique nos botões "&lt;" e "&gt;" para navegar entre os números.</li>
+          <li>Clique nos botões <i class="bi bi-skip-start-fill"></i> e <i class="bi bi-skip-end-fill"></i> para navegar entre os números.</li>
           <li>Clique em "Ouvir Número" para ouvir a pronúncia do número atual.</li>
         </ul>
       </div>
@@ -51,7 +53,7 @@
     <div id="end-game" style="display: none;">
       <h2>Fim do Jogo!</h2>
       <p>Parabéns, você completou todos os números!</p>
-      <button onclick="restartGame()">Reiniciar</button>
+      <button onclick="restartGame()"><i class="bi bi-arrow-clockwise"></i> Reiniciar</button>
     </div>
   </div>
 
