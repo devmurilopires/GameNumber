@@ -1,8 +1,24 @@
-/* style.css */
+:root {
+  --primary-color: #013f94;
+  --primary-color-hover: #022961;
 
+  --secundary-color: #fe0000;
+  --secundary-color-hover: #c90303; 
+}
 body {
-  font-family: "Comic Sans MS", cursive;
+  font-family: "Montserrat", sans-serif;
   background-color: #fce4ec;
+}
+
+.title h1 {
+  font-weight: 800;
+}
+.title img {
+  width: 100px;
+}
+
+.title:hover {
+  cursor: pointer;
 }
 
 .container {
@@ -48,9 +64,11 @@ h1 {
 
 p {
   margin-bottom: 20px;
+  color: #fe0000;
 }
 
 button {
+  margin: 15px 0;
   padding: 12px 24px;
   background-color: #013f94;
   color: #fff;
