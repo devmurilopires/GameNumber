@@ -22,6 +22,10 @@ body {
   display: none;
 }
 
+.d-block {
+  display: block;
+}
+
 .title h1 {
   font-weight: 800;
 }

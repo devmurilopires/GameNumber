@@ -28,19 +28,19 @@
     <h1 id="title">Se divirta aprendendo os números!</h1>
     <div class="start">
       <p>Clique para iniciar!</p>
-      <button onclick="startGame()"><i class="bi bi-play-fill"></i> INICIAR </button>
+      <button id="start"><i class="bi bi-play-fill"></i> INICIAR </button>
     </div>
-    <div id="game" style="display: none;">
+    <div id="game" class="d-none">
       <h2>Adivinhe o Número</h2>
       <div class="number" id="number-box"></div>
       <div class="number-image" id="number-image"></div>
       <div class="input-container">
-        <button onclick="previousNumber()" class="previous"><i class="bi bi-skip-start-fill"></i></button>
-        <button onclick="playAudio()">Ouvir Número</button>
-        <button onclick="nextNumber()" class="next"><i class="bi bi-skip-end-fill"></i></button>
+        <button class="previous"><i class="bi bi-skip-start-fill"></i></button>
+        <button class="play">Ouvir Número</button>
+        <button class="next"><i class="bi bi-skip-end-fill"></i></button>
       </div>
       <div class="stop-game">
-        <button onclick="endGame()"><i class="bi bi-pause-fill"></i> PARAR</button>
+        <button class="stop"><i class="bi bi-pause-fill"></i> PARAR</button>
       </div>
       <div class="instructions">
         <h3>Instruções:</h3>
@@ -50,10 +50,10 @@
         </ul>
       </div>
     </div>
-    <div id="end-game" style="display: none;">
+    <div id="end-game" class="d-none">
       <h2>Fim do Jogo!</h2>
       <p>Parabéns, você completou todos os números!</p>
-      <button onclick="restartGame()"><i class="bi bi-arrow-clockwise"></i> Reiniciar</button>
+      <button class="restart"><i class="bi bi-arrow-clockwise"></i> Reiniciar</button>
     </div>
   </div>
 
