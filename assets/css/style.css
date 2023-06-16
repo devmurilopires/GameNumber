@@ -10,6 +10,18 @@ body {
   background-color: #fce4ec;
 }
 
+#title {
+  margin-bottom: 10px;
+}
+
+#game h2 {
+  margin: 15px;
+}
+
+.d-none {
+  display: none;
+}
+
 .title h1 {
   font-weight: 800;
 }

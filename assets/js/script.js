@@ -1,9 +1,11 @@
 var currentNumberIndex = 0;
 var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 var audioElement = null;
+var start = document.querySelector('.start')
 
 function startGame() {
   document.getElementById("game").style.display = "block";
+  start.classList.add('d-none')
   generateNumber();
 }
 
@@ -42,6 +44,7 @@ function nextNumber() {
 function endGame() {
   document.getElementById("game").style.display = "none";
   document.getElementById("end-game").style.display = "block";
+  start.classList.remove('d-none')
 }
 
 function restartGame() {

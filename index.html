@@ -23,9 +23,11 @@
       <h1>SCEA</h1>
     </div>
     <div id="character"></div>
-    <h1>Se divirta aprendendo os números!</h1>
-    <p>Clique para iniciar!</p>
-    <button onclick="startGame()">Iniciar</button>
+    <h1 id="title">Se divirta aprendendo os números!</h1>
+    <div class="start">
+      <p>Clique para iniciar!</p>
+      <button onclick="startGame()">Iniciar</button>
+    </div>
     <div id="game" style="display: none;">
       <h2>Adivinhe o Número</h2>
       <div class="number" id="number-box"></div>
@@ -34,6 +36,9 @@
         <button onclick="previousNumber()">&lt;</button>
         <button onclick="playAudio()">Ouvir Número</button>
         <button onclick="nextNumber()">&gt;</button>
+      </div>
+      <div class="stop-game">
+        <button onclick="endGame()">PARAR</button>
       </div>
       <div class="instructions">
         <h3>Instruções:</h3>
